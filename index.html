@@ -4,53 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+
     <title>Сучасна пекарня</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="/index.html"> <img src="/img/logo.svg" alt="logo" /></a>
+        <a href="/"> <img src="/img/logo.svg" alt="logo" /></a>
         <ul>
-          <li><a href="#trad">Наші традиції</a></li>
-          <li><a href="#cooke">Наші кухарі</a></li>
-          <li><a href="#format">Формати</a></li>
-          <li><a href="#contakt">Контакти</a></li>
+          <li><a class="link" href="#trad">Наші традиції</a></li>
+          <li><a class="link" href="#cooke">Наші кухарі</a></li>
+          <li><a class="link" href="#format">Формати</a></li>
+          <li><a class="link" href="#contakt">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button type="button" class="button">Замовити дзвінок</button>
     </header>
 
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="herro-title">
+          <span style="color: var(--color-brand-ligth)">Сучасна</span> пекарня
+        </h1>
       </section>
       <section id="trad">
-        <ul>
+        <ul class="advand-list">
           <li>Великий попит на ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традицій</h2>
+        <h2 class="section-title">Новий формат традицій</h2>
         <p>
-          <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
-          зберегла смак традиційної випічки та натуральність інгредієнтів.
+          <span style="color: var(--color-brand-ligth)">shop bakery</span> — це
+          пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки
+          та натуральність інгредієнтів.
         </p>
         <p>
           Ми працюємо як найвідоміші мережі—
-          <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
-          стильний дизайн та висока якість обслуговування!
+          <span style="color: var(--color-brand-ligth)"
+            >5 хвилин і замовлення готове.</span
+          >
+          А ще у наших пекарень стильний дизайн та висока якість обслуговування!
         </p>
         <img src="/img/pekar.jpg" alt="чоловік дивиться на батони" />
       </section>
       <section id="cooke">
-        <h2>Наші найкращі шеф -кухарі</h2>
+        <h2 class="section-title">
+          Наші найкращі
+          <span style="color: var(--color-brand-dark)">шеф -кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
               <img src="/img/nastya.jpg" alt="nastya" />
               <h3>Настя</h3>
               <p>Привіт, я Настя!</p>
-              <p>Вже 10 років, я свтілюю у життя цікаві та смачні ідеї.</p>
+              <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
               <p>Я випічу для вас найсмачніщі вироби!</p>
             </article>
           </li>
@@ -69,32 +78,45 @@
         </ul>
       </section>
       <section id="format">
-        <h2>Формати</h2>
-        <ul>
+        <h2 class="section-title">Формати</h2>
+        <ul class="format-list">
           <li>
             <article>
               <h3 lang="en">Walrus</h3>
+              <p>
+                Площа: до 120 м2 Меню: розширене меню Штат: 2 продавці-касири, 2
+                пекарі, 2 помічники пекаря, 2 офіціанти-різнороби Посадкові
+                місця: є
+              </p>
             </article>
           </li>
           <li>
             <article>
               <h3 lang="en">Horseshoe</h3>
+              <p>
+                Площа: до 25 м2 Меню: найпопулярніші позиції меню Штат: 2
+                продавці-касири, 2 пекарі, 1 помічник пекаря Посадкові місця:
+                відсутні
+              </p>
             </article>
           </li>
           <li>
             <article>
               <h3 lang="en">Handlebar</h3>
+              <p>
+                Площа: до 15 м2 Меню: найпопулярніші позиції меню Штат: 1
+                продавець, 1 пекар, 1 помічник пекаря Посадкові місця: відсутні
+              </p>
             </article>
           </li>
         </ul>
       </section>
       <section id="contakt">
-        <h2>Приєднуйся до мережі пекарень</h2>
+        <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1634470425156!2d30.4886930122476!3d50.456680986796535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2sse!4v1765659743378!5m2!1suk!2sse"
           width="603"
           height="595"
-          style="border: 0"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"

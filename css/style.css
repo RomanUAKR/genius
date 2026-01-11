@@ -1,0 +1,69 @@
+:root {
+  --color-brand-ligth: #819b57;
+  --color-brand-dark: #465929;
+  --color-primary-light: #faf4ea;
+  --clor-primary-dark: #31261a;
+}
+
+ul {
+  list-style-type: none;
+}
+/*  */
+
+.button {
+  color: var(--color-primary-light);
+  background: var(--color-brand-ligth);
+  border: 2px solid var(--color-brand-ligth);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--color-brand-dark);
+  background-color: transparent;
+}
+/*  */
+
+.link {
+  color: var(--color-primary-light);
+}
+.link:hover {
+  color: var(--color-brand-dark);
+}
+
+.herro-title {
+  color: var(--color-primary-light);
+}
+
+.advand-list {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-ligth);
+}
+
+.format-list {
+  color: var(--color-primary-light);
+}
+
+.section-title {
+  color: var(--clor-primary-dark);
+}
+
+table,
+th,
+td {
+  border: 1px solid black; /* Малює суцільну чорну лінію товщиною 1 піксель */
+  border-collapse: collapse; /* ЦЕ ВАЖЛИВО: склеює подвійні рамки в одну тонку лінію */
+}
+
+/* 2. Додаємо трохи "повітря", щоб текст не прилипав до рамок */
+th,
+td {
+  padding: 8px; /* Внутрішні відступи */
+  text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+th {
+  background-color: aqua;
+}
+
+td:hover {
+  background-color: red;
+}
