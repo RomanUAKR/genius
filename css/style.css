@@ -31,13 +31,15 @@
 }
 
 :root {
-  --color-brand-ligth: #819b57;
+  --color-brand-light: #819b57;
   --color-brand-dark: #465929;
   --color-primary-light: #faf4ea;
   --clor-primary-dark: #31261a;
 }
 
 ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -47,17 +49,62 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 address {
   font-style: normal;
 }
-/*  */
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* heder */
+
+.heder-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.heder-meny {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
 
 .button {
+  padding: 16px 24px;
   color: var(--color-primary-light);
-  background: var(--color-brand-ligth);
-  border: 2px solid var(--color-brand-ligth);
+  background: var(--color-brand-light);
+  border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -75,10 +122,23 @@ address {
 .link:hover {
   color: var(--color-brand-dark);
   text-decoration: none;
-  font-weight: 600;
+  /* font-weight: 600; */
+}
+
+.section {
+  padding: 48px 00;
+}
+
+.hero-section {
+  padding: 272px 0;
+  background-image: url(/img/image\ 1559.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .herro-title {
+  margin-top: 0;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -86,14 +146,22 @@ address {
 }
 
 .herro-title .accent {
-  color: var(--color-brand-ligth);
+  color: var(--color-brand-light);
+}
+
+.advand-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0px;
 }
 
 .advand-list {
-  color: var(--color-primary-light);
-  background-color: var(--color-brand-ligth);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
+
 .advand-item {
+  color: var(--color-primary-light);
   font-size: 20px;
   font-weight: 300;
 }
@@ -111,25 +179,65 @@ address {
   color: var(--clor-primary-dark);
 }
 
+.trad-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.trad-content {
+  max-width: 710px;
+}
+.trad {
+  padding-top: 96px;
+}
+.trad-title {
+  margin-bottom: 42px;
+}
 .traditions-text .brand {
-  color: var(--color-brand-ligth);
+  color: var(--color-brand-light);
 }
 
 .traditions-text .uppercase {
   text-transform: uppercase;
-  color: var(--color-brand-ligth);
+  color: var(--color-brand-light);
   font-weight: 600;
+}
+
+.format-card {
+  padding: 24px;
+  border: 1px solid lightgray;
+  border-radius: 16px;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
 }
 
 .format-title {
   font-size: 24px;
   font-weight: 600;
 }
+.fortmats-title {
+  margin-bottom: 80px;
+}
 .format-text {
   font-size: 14px;
   font-weight: 300;
 }
 
+.chefs-title {
+  margin-bottom: 80px;
+}
+.chef-title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.contakt-title {
+  margin-bottom: 16px;
+}
 .address-link {
   font-size: 16px;
   font-weight: 300;
@@ -137,7 +245,7 @@ address {
   text-decoration: none;
 }
 .address-link:hover {
-  color: var(--color-brand-ligth);
+  color: var(--color-brand-light);
 }
 
 .address-copyright {
