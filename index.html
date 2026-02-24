@@ -60,20 +60,28 @@
                 та висока якість обслуговування!
               </p>
             </div>
-            <img src="/img/pekar.jpg" alt="чоловік дивиться на батони" />
+            <img
+              class="format-foto"
+              src="/img/manbatom.png"
+              alt="чоловік дивиться на батони"
+            />
           </div>
         </div>
       </section>
       <section id="cooke" class="section">
         <div class="container">
-          <h2 class="chefs-title traditions-text">
+          <h2 class="chefs-title section-title centred">
             Наші найкращі
             <span class="brand">шеф-кухарі</span>
           </h2>
           <ul>
             <li>
               <article>
-                <img src="/img/nastya.jpg" alt="nastya" />
+                <img
+                  class="chef-foto"
+                  src="/img/nastya-chef.jpg"
+                  alt="nastya"
+                />
                 <h3 class="chef-title">Настя</h3>
                 <p>Привіт, я Настя!</p>
                 <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -82,7 +90,7 @@
             </li>
             <li>
               <article>
-                <img src="/img/vlad.jpg" alt="vlad" />
+                <img class="chef-foto" src="/img/vlad-chef.jpg" alt="vlad" />
                 <h3 class="chef-title">Влад</h3>
                 <p>Привіт, я Влад!</p>
                 <p>
@@ -97,7 +105,12 @@
       </section>
       <section id="format" class="section">
         <div class="container">
-          <h2 class="fortmats-title section-title">Формати</h2>
+          <h2 class="fortmats-title section-title centred">Формати</h2>
+          <button type="button" class="carusel-button">
+            <svg class="format-arrow" width="16" height="16">
+              <use href="/img/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
           <ul class="formats-list">
             <li>
               <article class="format-card">
@@ -135,6 +148,11 @@
               </article>
             </li>
           </ul>
+          <button type="button" class="carusel-button">
+            <svg class="format-arrow" width="16" height="16">
+              <use href="/img/icons.svg#icon-Arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section id="contakt" class="section">
@@ -155,7 +173,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <a href="#">
           <!-- logo -->
@@ -192,10 +210,18 @@
           </ul>
           <ul>
             <li>
-              <!--  -->
+              <a href="#">
+                <svg class="address-soc" width="32" height="32">
+                  <use href="/img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <!--  -->
+              <a href="#">
+                <svg class="address-soc" width="32" height="32">
+                  <use href="/img/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <a class="address-link" href="#" target="_blank"
